@@ -65,6 +65,7 @@ export default function Index() {
             ))}
           </div>
           <div className="text-center mt-6">
+            <Link to={`/blog`} ></Link>
             <a
               href="/blog"
               className="text-gray-900 font-semibold underline hover:text-yellow-600 transition"
