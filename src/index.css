@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 51 100% 50%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 51 100% 95%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 51 100% 95%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 51 100% 95%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 51 100% 90%;
+    --input: 51 100% 90%;
+    --ring: 51 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 51 100% 50%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 51 100% 95%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 51 100% 90%;
+    --sidebar-ring: 51 100% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 51 100% 60%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 51 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 51 20% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 51 20% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 51 20% 15%;
+    --input: 51 20% 15%;
+    --ring: 51 100% 60%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 51 100% 60%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 51 20% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 51 20% 15%;
+    --sidebar-ring: 51 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Enhanced Button Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-yellow-500 text-gray-900 px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-600 hover:shadow-xl hover:scale-105 transform transition-all duration-300 border-2 border-yellow-400;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-800 text-yellow-100 px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl hover:bg-gray-900 transform hover:scale-105 transition-all duration-300 border-2 border-gray-700;
+  }
+
+  /* Radial gradient utility */
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}
