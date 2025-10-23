@@ -25,7 +25,7 @@ export default function Index() {
         <CinematicHero />
 
         {/* Services Section - with proper spacing */}
-        <SectionCard className="mx-auto max-w-6xl mt-16 shadow-yellow-100/30 bg-white/95 backdrop-blur-sm relative z-30">
+        <SectionCard className="mx-auto max-w-6xl mt-16 shadow-yellow-100/30 bg-white/95 backdrop-blur-sm relative z-10">
           <ServicesSection />
         </SectionCard>
 
